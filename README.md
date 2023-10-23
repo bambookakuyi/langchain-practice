@@ -17,4 +17,4 @@ OPENAI_API_KEY = "Your OpenAI API key"
 有一些例子需要用到文章、图片等资源文件，会放在static目录中。
 
 ## 执行用例
-Mac OS中, 可以在python脚本文件首行添加注释`#!/usr/bin/env python3`，然后在终端通过命令`./文件名`来运行代码。部分用例，比如`02-one-flower`是一个mini web，需要通过Flask来启动服务，具体可查看文件中的注释。
+Mac OS中, 可以在python脚本文件首行添加注释`#!/usr/bin/env python3`，然后在终端输入命令`chmod a+x 文件名`添加执行权限, 最后输入命令`./文件名`执行代码。部分用例，比如`02-one-flower`是一个mini web，需要通过Flask来启动服务，具体可查看文件中的注释。
