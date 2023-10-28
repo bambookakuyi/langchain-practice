@@ -10,6 +10,7 @@ LangChain是全方位的基于大语言模型的应用开发框架。
 根目录添加.env文件, 文件添加内容：
 ```python
 OPENAI_API_KEY = "Your OpenAI API key"
+HUGGINGFACEHUB_API_TOKEN = "Your Hugging Face Access token"
 ```
 
 ## 目录结构
