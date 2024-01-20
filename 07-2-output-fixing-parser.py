@@ -16,7 +16,7 @@ parser = PydanticOutputParser(pydantic_object = Flower)
 # 报错：langchain.schema.output_parser.OutputParserException: Failed to parse Flower from completion {'name': '康乃馨', 'colors': ['粉红色', '白色', '红色']}. Got: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
 # parser.parse(misformatted)
 
-# 2. 使用 OutputFixingParser 来自动结果类似的格式错误
+# 2. 使用 OutputFixingParser 来自动修复类似的格式错误
 from langchain.chat_models import ChatOpenAI
 from langchain.output_parsers import OutputFixingParser
 from dotenv import load_dotenv
