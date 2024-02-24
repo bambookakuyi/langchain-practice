@@ -20,9 +20,13 @@ from langchain.agents import AgentType
 from dotenv import load_dotenv
 load_dotenv()
 
+import langchain
+langchain.debug = True
+
 llm = OpenAI(temperature = 0)
 tools = load_tools(["serpapi", "llm-math"], llm = llm)
 agent = initialize_agent(tools, llm, agent = AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose = True)
-agent.run("目前中国市场上玫瑰花的平均价格是多少？如果我在此基础上加价15%卖出，应该如何定价？")
+# breakpoint()
+agent.run("目前市场上玫瑰花的平均价格是多少？如果我在此基础上加价15%卖出，应该如何定价？")
 # 上面推理过程和结果都是英文的，提示用中文回复就一直报错：raised error: 'average_price_of_roses'. Please try again with a valid numerical expression
 # agent.run("目前中国市场上玫瑰花的平均价格是多少人民币？如果我在此基础上加价15%卖出，应该如何定价？结果用中文回复")
