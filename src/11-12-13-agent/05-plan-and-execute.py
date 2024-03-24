@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 # Plan and execute 代理
 # 这种代理的独特之处在于，它的计划和执行不再是由同一个代理所完成，而是：

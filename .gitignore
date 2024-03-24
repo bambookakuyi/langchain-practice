@@ -1,2 +1,3 @@
 .env
 __pycache__/*
+src/14-tool-and-toolkits/02-gmail-toolkits/*.json

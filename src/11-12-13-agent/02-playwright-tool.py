@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 # pip3 install playwright
 # playwright install # 安装 Chromium, FFMPEG, Firefox和Webkit
