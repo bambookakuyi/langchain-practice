@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 # 要点：
 # ReAct框架是指Reasoning(推理)和Acting(行动)
